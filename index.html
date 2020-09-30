@@ -5,7 +5,15 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <script>
+            function resizeIframe(obj) {
+              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+          </script>
         <title>Grant Dumanian</title>
     </head>
     <body>
@@ -14,10 +22,10 @@
                 <h1 class="name">Grant Dumanian</h1>
             </div>
             <div class="link-container">
-                <a class="headerlink" href="about"><h2>About Me |</h2></a>
-                <a class="headerlink" href="projects"><h2> Projects |</h2></a>
-                <a class="headerlink" href="resume"><h2>Resume |</h2></a>
-                <a class="headerlink" href="contact"><h2>Contact</h2></a>
+                <a class="headerlink" data-uk-smooth-scroll="{offset: 120}" href="#about"><h2>About Me |</h2></a>
+                <a class="headerlink" data-uk-smooth-scroll="{offset: 120}" href="#projects"><h2> Projects |</h2></a>
+                <a class="headerlink" href="#resume"><h2>Resume |</h2></a>
+                <a class="headerlink" href="#contact"><h2>Contact</h2></a>
             </div>
         </div>
         <div class="main-container">
@@ -36,24 +44,28 @@
             </div>
             <div class="main">
                 <div class="section" id="about">
-                    <h1 class="sectiontitle">About</h1>
+                    <h1 class="sectiontitle">About Me</h1>
                     <div class="text-photo-main">
                         <div class="text-photo">
-                            <p>Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire. 
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
+                            <p>Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire, 
+                                although I am originally from San Francisco. 
+                                I am currently studying Computer Science and Spanish, with a particular interest in 
+                                creating user-friendly front end frameworks that leverage powerful APIs. Outside of the classroom,
+                                I am an avid rock climber, hiker, and snowboarder. Whenever possible, I spend my free time in
+                                the mountains.
                             </p>
                             <img src="climbing.jpeg" class="aboutphoto" id="climbphoto">
                         </div>
                         <div class="text-photo">
                             <img src="snowboarding.jpeg"class="aboutphoto" id="snowboardphoto">
-                            <p>Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire. 
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
-                                Hi! My name is Grant Dumanian and I'm a junior at Dartmouth College in Hanover, New Hampshire.
+                            <p> Most of my professional experience has been spent working as a Product Manager at different tech
+                                startups. During the summer of 2018, a coworker and I traveled to Nepal
+                                on behalf of a local non-profit and field tested 'Looma,' an educational software designed for
+                                low income classrooms. During the summer of 2019, I was a PM intern at Grove Collaborative, an 
+                                eco-friendly home goods company, where I transitioned the product team from a front-end to a full
+                                stack testing software. Most recently, I was a product manager at Mana.ai, where I established a
+                                scalable program for the hiring of freelance coaches and hired and trained two personal coaches
+                                to guide users.
                             </p>
                         </div>  
                     </div>
@@ -83,9 +95,18 @@
                 </div>
                 <div id="resume">
                     <h1 class="sectiontitle">Resume</h1>
+                    <iframe id="resumedoc" src="https://docs.google.com/document/d/e/2PACX-1vTvYjq_CBCD0w2Ujih5r4H0-w5cr4xPMU2Df_2HoZSH5ENJn7hw52AbNVuJ5D3Ruw/pub?embedded=true" 
+                    frameborder="0" scrolling="yes" onload="resizeIframe(this)" height="800"></iframe>
                 </div>
                 <div id="contact">
                     <h1 class="sectiontitle">Contact</h1>
+                    <div class="iconrow">
+                        <a class="contactlinks" href="mailto: grant.dumanian@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a class="contactlinks" href="https://www.linkedin.com/in/grantdumanian"><i class="fab fa-linkedin"></i></a>
+                        <a class="contactlinks" href="https://www.instagram.com/grantrd"><i class="fab fa-instagram"></i></a>
+                        <a class="contactlinks" href="https://www.github.com/grantrdumanian"><i class="fab fa-github"></i></a>
+
+                    </div>
                 </div>
             </div>
         </div>

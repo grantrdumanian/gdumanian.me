@@ -99,7 +99,7 @@ body {
   top: 17%;
   height: 130%;
   width: 70%;
-  left: 23%;
+  left: 26%;
   z-index: 0;
 }
 
@@ -111,8 +111,8 @@ body {
 .text-photo{
   display: flex;
   flex-direction: row;
+  align-items: center;  
   line-height: 30px;
-
 }
 
 #climbphoto{
@@ -120,7 +120,7 @@ body {
 }
 
 #snowboardphoto{
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .section-photo{
@@ -130,4 +130,33 @@ body {
 .aboutphoto{
   width: 220px;
   height: 220px;
+}
+
+#resume{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#resumedoc{
+  width: 100%;
+  height: 300px;
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconrow{
+  font-size: 50px;
+}
+
+.contactlinks{
+  text-decoration: none;
+  color: black;
 }
